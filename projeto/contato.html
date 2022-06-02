@@ -6,15 +6,40 @@
 <link href="CSS/contraste.css" rel="stylesheet" media="all"/>
 <script src="js/contrast.class.js"></script>
 <body>
+    
     <div class="menu">
         <ul type="square" id="nav">
              <li><a href="index.html">HOME</a></li>
              <li><a href="deficientes-no-brasil.html">DEFICIENTES NO BRASIL</a></li>
              <li><a href="contato.html"> CONTATO</a></li>
-             <li><a href="#altocontraste" id="altocontraste" accesskey="3" onclick="window.toggleContrast()" onkeydown="window.toggleContrast()">Alto contraste [Alt + 3]</a></li>
+           
         </ul>
      </div>
-
+     <style>
+        body {
+          padding: 25px;
+          background-color: white;
+          color: black;
+          font-size: 25px;
+        }
+        
+        .dark-mode {
+          background-color: black;
+          color: rgb(156, 61, 61);
+        }
+        </style>
+        </head>
+        
+        <p>Click no botão para mudar o modo</p>
+        
+        <button onclick="myFunction()">modo escuro</button>
+        
+        <script>
+        function myFunction() {
+           var element = document.body;
+           element.classList.toggle("dark-mode");
+        }
+        </script>
 <h1>ENTRE EM CONTATO</h1>
 
 <form name="formulario" method="POST" id="formulario">
