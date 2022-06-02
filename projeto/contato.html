@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head><title>DEFICIENTES NO BRASIL</title></head>
+    <meta charset="UTF-8">
+<link href="CSS/estilo.css" rel="stylesheet" media="all"/>
+<body>
+    <div class="menu">
+        <ul type="square" id="nav">
+             <li><a href="index.html">HOME</a></li>
+             <li><a href="deficientes-no-brasil.html">DEFICIENTES NO BRASIL</a></li>
+             <li><a href="contato.html"> CONTATO</a></li>
+        </ul>
+     </div>
+
+<h1>ENTRE EM CONTATO</h1>
+
+<form name="formulario" method="POST" id="formulario">
+
+<div id="area">
+    <fieldset>
+    <legend>Formulário</legend>
+    <label>Nome:</label><input type="text" id="nomeid"
+    placeholder="Fulano" required="required" name="nome"/>
+   </input><br>
+    <label>Fone:</label><input type="tel" id="foneid"
+    placeholder="(xx)xxxxx-xxxx" name="fone"/>
+   </input><br>
+   <label>Email:</label><input type="email" id="emailid"
+   placeholder="fulano@mail.com" name="email"/>
+  </input><br>
+  <label>Mensagem:</label><br><textarea placeholder="mensagem">
+  </textarea><br>
+  <input type="submit" class="enviar" onclick="Enviar();"
+  value= "Enviar" onclick="return validar_formulario()"/>
+  </fieldset>
+</form>
+</div>
+
+</body>
+</html>
