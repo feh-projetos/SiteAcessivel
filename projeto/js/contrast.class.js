@@ -18,7 +18,7 @@
         this.updateView();
     }
 
-    function getContrastState() {
+    function getContrastState() {                  
         return localStorage.getItem(this.storage) === 'true';
     }
 
